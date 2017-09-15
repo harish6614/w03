@@ -45,6 +45,20 @@ var App = {
       output += arguments[i];
     }
     return output;
+  },
+  add: function() {
+    var output = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      output += arguments[i];
+    }
+    return output;
+  },
+  square: function(num) {
+    if (typeof num !== 'number') {
+      throw Error("The given argument is not a number")
+    }
+    return Math.pow(num,2);
   }
+
 };
 
